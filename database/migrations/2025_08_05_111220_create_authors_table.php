@@ -19,10 +19,7 @@ return new class extends Migration
         });
     }
 
-    public function books()
-    {
-        return $this->hasMany(Author::class);
-    }
+    
     /**
      * Reverse the migrations.
      */

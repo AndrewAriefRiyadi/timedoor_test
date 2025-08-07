@@ -17,10 +17,7 @@ return new class extends Migration {
             $table->timestamps();
         });
     }
-    public function books()
-    {
-        return $this->hasMany(Book::class);
-    }
+    
 
     /**
      * Reverse the migrations.

@@ -5,8 +5,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      */
@@ -18,10 +17,11 @@ return new class extends Migration
             $table->foreignId('book_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
-    }
 
-    public function book() {
-        return $this->belongsTo(Book::class);
+        Schema::table('ratings', function (Blueprint $table) {
+            $table->index('book_id');
+        });
+
     }
 
     public function down(): void

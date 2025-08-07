@@ -14,13 +14,12 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         
     </head>
-    <body class=" font-mono antialiased dark:bg-black dark:text-white/50 ">
+    <body class=" font-mono antialiased bg-gray-900 text-white/50 ">
         <div class=" flex flex-col justify-center items-center gap-16 h-screen m-auto text-xl ">
-            <a href="" class=" bg-gray-800 px-4 py-2 rounded text-white">List of Books</a>
-            <a href="" class=" bg-gray-800 px-4 py-2 rounded text-white">List of Famous Author</a>
-            <a href="" class=" bg-gray-800 px-4 py-2 rounded text-white">Input Rating</a>
+            <a href="{{ route("books")}}" class=" bg-gray-700 px-4 py-2 rounded text-white">List of Books</a>
+            <a href="" class=" bg-gray-700 px-4 py-2 rounded text-white">List of Famous Author</a>
+            <a href="" class=" bg-gray-700 px-4 py-2 rounded text-white">Input Rating</a>
         </div>
-
         
     </body>
 </html>
