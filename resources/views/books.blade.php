@@ -39,7 +39,6 @@
             </div>
             <button type="submit" class="bg-blue-700 text-white">Submit</button>
         </form>
-
     </div>
 
     <table class="table-auto w-full">
