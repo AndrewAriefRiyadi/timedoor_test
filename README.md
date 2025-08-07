@@ -22,7 +22,7 @@ Pastikan Anda telah menginstal:
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/username/project-name.git
+git clone https://github.com/AndrewAriefRiyadi/timedoor_test.git
 cd project-name
 ```
 
