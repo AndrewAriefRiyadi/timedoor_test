@@ -32,7 +32,7 @@
             @csrf
             <div class=" flex flex-col gap-4">
                 <input list="authors_list" id="author_input" placeholder="Nama Author"
-                    class="text-white bg-gray-700 px-2 rounded-sm">
+                    class="text-white bg-gray-700 px-2 rounded-sm" required>
                 <datalist id="authors_list">
                     @foreach ($authors as $author)
                         <option data-id="{{ $author->id }}" value="{{ $author->name }}"></option>
@@ -42,13 +42,13 @@
 
 
                 <input name="book_title" list="books_list" id="book_input" name="book" placeholder="Nama Book"
-                    class="text-white bg-gray-700 px-2 rounded-sm">
+                    class="text-white bg-gray-700 px-2 rounded-sm" required>
                 <datalist id="books_list">
                     <!-- Akan diisi lewat JS -->
                 </datalist>
 
 
-                <select class=" py-1 text-white bg-gray-700 px-2 rounded-sm" name="rating">
+                <select class=" py-1 text-white bg-gray-700 px-2 rounded-sm" name="rating" required>
                     @for ($i = 1; $i < 11; $i++)
                         <option value="{{ $i }}">{{ $i }}</option>
                     @endfor
