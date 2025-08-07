@@ -21,6 +21,7 @@
     <div class=" flex flex-col justify-start gap-2 mb-6">
         <a href="/" class=" bg-gray-700 px-4 py-2 rounded text-white w-fit self-center">Home</a>
     </div>
+    <p class=" text-center font-bold text-3xl mb-4 text-white/70">Top 10 Most Famous Author</p>
     <table class="table-auto w-full">
         <thead class=" bg-gray-600">
             <tr>
@@ -33,7 +34,7 @@
             @foreach ($authors as $author)
                 <tr>
                     <td class=" text-center">{{$loop->iteration}}</td>
-                    <td>{{$author->name}}</td>
+                    <td class="">{{$author->name}}</td>
                     <td class=" text-center">{{$author->total_voters}}</td>
                 </tr>
             @endforeach
